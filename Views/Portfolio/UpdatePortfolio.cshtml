@@ -1,0 +1,48 @@
+﻿@model MyPortfolyo.Dal.Entities.Portfolio
+
+@{
+    ViewData["Title"] = "Portföy Güncelle";
+    Layout = "~/Views/Layout/Index.cshtml";
+}
+
+<div class="content">
+    <div class="container-fluid">
+        <h4 class="page-title text-primary">Portföy Güncelle</h4>
+        <div class="row">
+            <div class="col-md-6 offset-md-3">
+                <div class="card shadow-sm">
+                    <div class="card-header bg-primary text-white">
+                        <h5 class="card-title m-0">Portföy Bilgilerini Güncelleyin</h5>
+                    </div>
+                    <div class="card-body">
+                        <form asp-action="UpdatePortfolio" method="post">
+                            <input type="hidden" asp-for="PortfolioId" />
+                            <div class="mb-3">
+                                <label for="Title" class="form-label">Portföy Başlığı</label>
+                                <input type="text" class="form-control" id="Title" asp-for="Title" placeholder="Portföy başlığını girin" required />
+                            </div>
+                            <div class="mb-3">
+                                <label for="SubTitle" class="form-label">Alt Başlık</label>
+                                <input type="text" class="form-control" id="SubTitle" asp-for="SubTitle" placeholder="Alt başlık girin" required />
+                            </div>
+                            <div class="mb-3">
+                                <label for="ImageUrl" class="form-label">Resim URL</label>
+                                <input type="text" class="form-control" id="ImageUrl" asp-for="ImageUrl" placeholder="Resmin URL'sini girin" required />
+                            </div>
+                            <div class="mb-3">
+                                <label for="Url" class="form-label">Proje URL</label>
+                                <input type="text" class="form-control" id="Url" asp-for="Url" placeholder="Proje URL'sini girin" required />
+                            </div>
+                            <div class="mb-3">
+                                <label for="Description" class="form-label">Açıklama</label>
+                                <textarea class="form-control" id="Description" asp-for="Description" rows="4" placeholder="Portföy açıklamasını girin" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Portföyü Güncelle</button>
+                            <a href="/Portfolio/PortfolioList" class="btn btn-secondary">Geri Dön</a>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

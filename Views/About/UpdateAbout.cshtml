@@ -1,0 +1,45 @@
+﻿@model About
+@{
+    ViewData["Title"] = "UpdateAbout";
+    Layout = "~/Views/Layout/Index.cshtml";
+}
+
+<div class="content">
+    <div class="container-fluid">
+        <h4 class="page-title text-primary">Hakkımda Güncelle</h4>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card shadow-sm">
+                    <div class="card-header bg-primary text-white">
+                        <h5 class="card-title m-0" style="color: white;">Hakkımda Bilgisi Güncelleme Sayfası</h5>
+                    </div>
+                    <div class="card-body">
+                        <form method="post">
+                            <input type="hidden" asp-for="AboutId" />
+
+                            <div class="form-group">
+                                <label>Başlık</label>
+                                <input type="text" asp-for="Title" class="form-control" placeholder="Başlık giriniz" />
+                                <span asp-validation-for="Title" class="text-danger"></span>
+                            </div>
+                            <br />
+                            <div class="form-group">
+                                <label>Alt Açıklama</label>
+                                <input type="text" asp-for="SubDescription" class="form-control" placeholder="Alt açıklama giriniz" />
+                                <span asp-validation-for="SubDescription" class="text-danger"></span>
+                            </div>
+                            <br />
+                            <div class="form-group">
+                                <label>Detaylar</label>
+                                <textarea rows="4" asp-for="Details" class="form-control" placeholder="Detayları giriniz"></textarea>
+                                <span asp-validation-for="Details" class="text-danger"></span>
+                            </div>
+                            <br />
+                            <button type="submit" class="btn btn-warning">Bilgiyi Güncelle</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
