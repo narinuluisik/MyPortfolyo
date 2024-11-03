@@ -1,0 +1,45 @@
+﻿@model List<MyPortfolyo.Dal.Entities.Contact>
+
+@{
+    ViewData["Title"] = "İletişim Bilgileri Listesi";
+    Layout = "~/Views/Layout/Index.cshtml";
+}
+
+<div class="container mt-4">
+    <h4 class="text-primary">@ViewData["Title"]</h4>
+    <a href="/Contact/CreateContact" class="btn btn-outline-primary mb-3">Yeni İletişim Bilgisi Ekle</a>
+    <table class="table table-bordered mt-3 table-hover">
+        <thead class="table-light">
+            <tr>
+                <th>#</th>
+                <th>Başlık</th>
+                <th>Açıklama</th>
+                <th>Telefon 1</th>
+                <th>Telefon 2</th>
+                <th>E-posta 1</th>
+                <th>E-posta 2</th>
+                <th>Adres</th>
+                <th>İşlemler</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>@item.ContactId</td>
+                    <td>@item.Title</td>
+                    <td>@item.Description</td>
+                    <td>@item.Phone1</td>
+                    <td>@item.Phone2</td>
+                    <td>@item.Email1</td>
+                    <td>@item.Email2</td>
+                    <td>@item.Address</td>
+                    <td>
+                        <a href="/Contact/UpdateContact/@item.ContactId" class="btn btn-success btn-sm">Güncelle</a>
+                        <a href="/Contact/DeleteContact/@item.ContactId" class="btn btn-danger btn-sm">Sil</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

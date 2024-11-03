@@ -1,0 +1,36 @@
+﻿@model MyPortfolyo.Dal.Entities.Skill
+
+@{
+    ViewData["Title"] = "Beceri Güncelle";
+    Layout = "~/Views/Layout/Index.cshtml"; ; // Layout dosyasının doğru yolunu kontrol et
+}
+
+<div class="content">
+    <div class="container-fluid">
+        <h4 class="page-title text-primary">Beceri Güncelle</h4>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card shadow-sm">
+                    <div class="card-header bg-primary text-white">
+                        <h5 class="card-title m-0" style="color: white;">Beceri Bilgilerini Güncelleyin</h5>
+                    </div>
+                    <div class="card-body">
+                        <form asp-action="UpdateSkill" method="post">
+                            <input type="hidden" asp-for="SkillId" />
+                            <div class="mb-3">
+                                <label for="Title" class="form-label">Beceri Başlığı</label>
+                                <input type="text" class="form-control" id="Title" asp-for="Title" required />
+                            </div>
+                            <div class="mb-3">
+                                <label for="Value" class="form-label">Değer (0-100)</label>
+                                <input type="number" class="form-control" id="Value" asp-for="Value" min="0" max="100" required />
+                            </div>
+                            <button type="submit" class="btn btn-primary">Beceri Güncelle</button>
+                            <a href="/Skill/SkillList" class="btn btn-secondary">Geri Dön</a>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

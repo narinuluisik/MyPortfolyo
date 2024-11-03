@@ -1,0 +1,47 @@
+﻿@model MyPortfolyo.Dal.Entities.Portfolio
+
+@{
+    ViewData["Title"] = "Yeni Portföy Ekle";
+    Layout = "~/Views/Layout/Index.cshtml";
+}
+
+<div class="content">
+    <div class="container-fluid">
+        <h4 class="page-title text-primary">Yeni Portföy Ekle</h4>
+        <div class="row">
+            <div class="col-md-6 offset-md-3">
+                <div class="card shadow-sm">
+                    <div class="card-header bg-primary text-white">
+                        <h5 class="card-title m-0">Portföy Bilgilerini Girin</h5>
+                    </div>
+                    <div class="card-body">
+                        <form asp-action="CreatePortfolio" method="post">
+                            <div class="mb-3">
+                                <label for="Title" class="form-label">Portföy Başlığı</label>
+                                <input type="text" class="form-control" id="Title" name="Title" placeholder="Portföy başlığını girin" required />
+                            </div>
+                            <div class="mb-3">
+                                <label for="SubTitle" class="form-label">Alt Başlık</label>
+                                <input type="text" class="form-control" id="SubTitle" name="SubTitle" placeholder="Alt başlık girin" required />
+                            </div>
+                            <div class="mb-3">
+                                <label for="ImageUrl" class="form-label">Resim URL</label>
+                                <input type="text" class="form-control" id="ImageUrl" name="ImageUrl" placeholder="Resmin URL'sini girin" required />
+                            </div>
+                            <div class="mb-3">
+                                <label for="Url" class="form-label">Proje URL</label>
+                                <input type="text" class="form-control" id="Url" name="Url" placeholder="Proje URL'sini girin" required />
+                            </div>
+                            <div class="mb-3">
+                                <label for="Description" class="form-label">Açıklama</label>
+                                <textarea class="form-control" id="Description" name="Description" rows="4" placeholder="Portföy açıklamasını girin" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Portföy Ekle</button>
+                            <a href="/Portfolio/PortfolioList" class="btn btn-secondary">Geri Dön</a>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
