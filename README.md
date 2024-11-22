@@ -16,7 +16,8 @@ Admin Panelli Dinamik Portfolyo Sitesi, kullanıcıların içeriklerini yöneteb
 ## Ekran Görüntüleri
 Aşağıda uygulamanın ekran görüntüleri bulunmaktadır:
 
-- ![Ekran Görüntüsü 1](https://github.com/narinuluisik/MyPortfolyo/blob/master/screenshot/Ekran%20g%C3%B6r%C3%BCnt%C3%BCs%C3%BC%202024-11-03%20171607.png?raw=true)
+- ![Ekran Görüntüsü 1](https://github.com/narinuluisik/MyPortfolyo/blob/master/screenshot/Ekran%20g%C3%B6r%C3%BCnt%C3%BCs%C3%BC%202024-11-23%20000742.png?raw=true)
 - ![Ekran Görüntüsü 2](https://github.com/narinuluisik/MyPortfolyo/blob/master/screenshot/Ekran%20g%C3%B6r%C3%BCnt%C3%BCs%C3%BC%202024-11-03%20171638.png?raw=true)
-- ![Ekran Görüntüsü 3](https://github.com/narinuluisik/MyPortfolyo/blob/master/screenshot/Ekran%20g%C3%B6r%C3%BCnt%C3%BCs%C3%BC%202024-11-03%20171454.png?raw=true)
-- ![Ekran Görüntüsü 4](https://github.com/narinuluisik/MyPortfolyo/blob/master/screenshot/Ekran%20g%C3%B6r%C3%BCnt%C3%BCs%C3%BC%202024-11-03%20171541.png?raw=true)
+- ![Ekran Görüntüsü 3](https://github.com/narinuluisik/MyPortfolyo/blob/master/screenshot/Ekran%20g%C3%B6r%C3%BCnt%C3%BCs%C3%BC%202024-11-23%20001521.png?raw=true)
+- ![Ekran Görüntüsü 4](https://github.com/narinuluisik/MyPortfolyo/blob/master/screenshot/Ekran%20g%C3%B6r%C3%BCnt%C3%BCs%C3%BC%202024-11-23%20001505.png?raw=true)
+- ![Ekran Görüntüsü 5](https://github.com/narinuluisik/MyPortfolyo/blob/master/screenshot/Ekran%20g%C3%B6r%C3%BCnt%C3%BCs%C3%BC%202024-11-03%20171541.png?raw=true)
