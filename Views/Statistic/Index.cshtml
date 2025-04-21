@@ -1,331 +1,127 @@
-﻿
-@{
+﻿@{
     ViewData["Title"] = "Index";
     Layout = "~/Views/Layout/Index.cshtml";
 }
 <div class="content">
-	<div class="container-fluid">
-		<h4 class="page-title">İstatistikler</h4>
-		<div class="row">
-			<div class="col-md-3">
-				<div class="card card-stats card-warning">
-					<div class="card-body ">
-						<div class="row">
-							<div class="col-5">
-								<div class="icon-big text-center">
-									<i class="la la-users"></i>
-								</div>
-							</div>
-							<div class="col-7 d-flex align-items-center">
-								<div class="numbers">
-									<p class="card-category">Visitors</p>
-									<h4 class="card-title">1,294</h4>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="col-md-3">
-				<div class="card card-stats card-success">
-					<div class="card-body ">
-						<div class="row">
-							<div class="col-5">
-								<div class="icon-big text-center">
-									<i class="la la-bar-chart"></i>
-								</div>
-							</div>
-							<div class="col-7 d-flex align-items-center">
-								<div class="numbers">
-									<p class="card-category">Sales</p>
-									<h4 class="card-title">$ 1,345</h4>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="col-md-3">
-				<div class="card card-stats card-danger">
-					<div class="card-body">
-						<div class="row">
-							<div class="col-5">
-								<div class="icon-big text-center">
-									<i class="la la-newspaper-o"></i>
-								</div>
-							</div>
-							<div class="col-7 d-flex align-items-center">
-								<div class="numbers">
-									<p class="card-category">Subscribers</p>
-									<h4 class="card-title">1303</h4>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="col-md-3">
-				<div class="card card-stats card-primary">
-					<div class="card-body ">
-						<div class="row">
-							<div class="col-5">
-								<div class="icon-big text-center">
-									<i class="la la-check-circle"></i>
-								</div>
-							</div>
-							<div class="col-7 d-flex align-items-center">
-								<div class="numbers">
-									<p class="card-category">Order</p>
-									<h4 class="card-title">576</h4>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			
-		</div>
-		
-	<br />
-		<div class="row">
-			<div class="col-md-3">
-				<div class="card card-stats card-warning">
-					<div class="card-body ">
-						<div class="row">
-							<div class="col-5">
-								<div class="icon-big text-center">
-									<i class="la la-users"></i>
-								</div>
-							</div>
-							<div class="col-7 d-flex align-items-center">
-								<div class="numbers">
-									<p class="card-category">Yetenek sayısı</p>
-									<h4 class="card-title">@ViewBag.v1</h4>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="col-md-3">
-				<div class="card card-stats card-success">
-					<div class="card-body ">
-						<div class="row">
-							<div class="col-5">
-								<div class="icon-big text-center">
-									<i class="la la-bar-chart"></i>
-								</div>
-							</div>
-							<div class="col-7 d-flex align-items-center">
-								<div class="numbers">
-									<p class="card-category">Toplam Mesa</p>
-									<h4 class="card-title">@ViewBag.v2</h4>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="col-md-3">
-				<div class="card card-stats card-danger">
-					<div class="card-body">
-						<div class="row">
-							<div class="col-5">
-								<div class="icon-big text-center">
-									<i class="la la-newspaper-o"></i>
-								</div>
-							</div>
-							<div class="col-7 d-flex align-items-center">
-								<div class="numbers">
-									<p class="card-category">Okunmayan Mesajlar</p>
-									<h4 class="card-title">@ViewBag.v3</h4>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="col-md-3">
-				<div class="card card-stats card-primary">
-					<div class="card-body ">
-						<div class="row">
-							<div class="col-5">
-								<div class="icon-big text-center">
-									<i class="la la-check-circle"></i>
-								</div>
-							</div>
-							<div class="col-7 d-flex align-items-center">
-								<div class="numbers">
-									<p class="card-category">Okunanlar</p>
-									<h4 class="card-title">@ViewBag.v4</h4>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
+    <div class="container-fluid">
+        <h4 class="page-title" style="font-size: 30px; font-weight: bold; color: #333;">İstatistikler</h4>
+        <div class="row mt-5">
 
-		</div>
-		<br />
-		<div class="row">
-			<div class="col-md-3">
-				<div class="card card-stats card-warning">
-					<div class="card-body ">
-						<div class="row">
-							<div class="col-5">
-								<div class="icon-big text-center">
-									<i class="la la-users"></i>
-								</div>
-							</div>
-							<div class="col-7 d-flex align-items-center">
-								<div class="numbers">
-									<p class="card-category">Visitors</p>
-									<h4 class="card-title">1,294</h4>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="col-md-3">
-				<div class="card card-stats card-success">
-					<div class="card-body ">
-						<div class="row">
-							<div class="col-5">
-								<div class="icon-big text-center">
-									<i class="la la-bar-chart"></i>
-								</div>
-							</div>
-							<div class="col-7 d-flex align-items-center">
-								<div class="numbers">
-									<p class="card-category">Sales</p>
-									<h4 class="card-title">$ 1,345</h4>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="col-md-3">
-				<div class="card card-stats card-danger">
-					<div class="card-body">
-						<div class="row">
-							<div class="col-5">
-								<div class="icon-big text-center">
-									<i class="la la-newspaper-o"></i>
-								</div>
-							</div>
-							<div class="col-7 d-flex align-items-center">
-								<div class="numbers">
-									<p class="card-category">Subscribers</p>
-									<h4 class="card-title">1303</h4>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="col-md-3">
-				<div class="card card-stats card-primary">
-					<div class="card-body ">
-						<div class="row">
-							<div class="col-5">
-								<div class="icon-big text-center">
-									<i class="la la-check-circle"></i>
-								</div>
-							</div>
-							<div class="col-7 d-flex align-items-center">
-								<div class="numbers">
-									<p class="card-category">Order</p>
-									<h4 class="card-title">576</h4>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
+            <div class="col-md-3">
+                <div class="card card-stats card-warning shadow-lg border-radius-10">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-5">
+                                <div class="icon-big text-center">
+                                    <i class="la la-users" style="font-size: 60px; color: #FFC107;"></i>
+                                </div>
+                            </div>
+                            <div class="col-7 d-flex align-items-center">
+                                <div class="numbers">
+                                    <p class="card-category" style="font-size: 20px; color: #666;">Yetenek sayısı</p>
+                                    <h4 class="card-title" style="font-size: 50px; color: #333;">@ViewBag.v1</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-		</div>
-		<br />
-		<div class="row">
-			<div class="col-md-3">
-				<div class="card card-stats card-warning">
-					<div class="card-body ">
-						<div class="row">
-							<div class="col-5">
-								<div class="icon-big text-center">
-									<i class="la la-users"></i>
-								</div>
-							</div>
-							<div class="col-7 d-flex align-items-center">
-								<div class="numbers">
-									<p class="card-category">Visitors</p>
-									<h4 class="card-title">1,294</h4>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="col-md-3">
-				<div class="card card-stats card-success">
-					<div class="card-body ">
-						<div class="row">
-							<div class="col-5">
-								<div class="icon-big text-center">
-									<i class="la la-bar-chart"></i>
-								</div>
-							</div>
-							<div class="col-7 d-flex align-items-center">
-								<div class="numbers">
-									<p class="card-category">Sales</p>
-									<h4 class="card-title">$ 1,345</h4>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="col-md-3">
-				<div class="card card-stats card-danger">
-					<div class="card-body">
-						<div class="row">
-							<div class="col-5">
-								<div class="icon-big text-center">
-									<i class="la la-newspaper-o"></i>
-								</div>
-							</div>
-							<div class="col-7 d-flex align-items-center">
-								<div class="numbers">
-									<p class="card-category">Subscribers</p>
-									<h4 class="card-title">1303</h4>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="col-md-3">
-				<div class="card card-stats card-primary">
-					<div class="card-body ">
-						<div class="row">
-							<div class="col-5">
-								<div class="icon-big text-center">
-									<i class="la la-check-circle"></i>
-								</div>
-							</div>
-							<div class="col-7 d-flex align-items-center">
-								<div class="numbers">
-									<p class="card-category">Order</p>
-									<h4 class="card-title">576</h4>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
+            <div class="col-md-3">
+                <div class="card card-stats card-success shadow-lg border-radius-10">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-5">
+                                <div class="icon-big text-center">
+                                    <i class="la la-bar-chart" style="font-size: 60px; color: #28a745;"></i>
+                                </div>
+                            </div>
+                            <div class="col-7 d-flex align-items-center">
+                                <div class="numbers">
+                                    <p class="card-category" style="font-size: 20px; color: #666;">Toplam Mesa</p>
+                                    <h4 class="card-title" style="font-size: 50px; color: #333;">@ViewBag.v2</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-		</div>
-	<br />
-	</div>
+            <div class="col-md-3">
+                <div class="card card-stats card-danger shadow-lg border-radius-10">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-5">
+                                <div class="icon-big text-center">
+                                    <i class="la la-newspaper-o" style="font-size: 60px; color: #dc3545;"></i>
+                                </div>
+                            </div>
+                            <div class="col-7 d-flex align-items-center">
+                                <div class="numbers">
+                                    <p class="card-category" style="font-size: 20px; color: #666;">Okunmayan Mesajlar</p>
+                                    <h4 class="card-title" style="font-size: 50px; color: #333;">@ViewBag.v3</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="card card-stats card-primary shadow-lg border-radius-10">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-5">
+                                <div class="icon-big text-center">
+                                    <i class="la la-check-circle" style="font-size: 60px; color: #007bff;"></i>
+                                </div>
+                            </div>
+                            <div class="col-7 d-flex align-items-center">
+                                <div class="numbers">
+                                    <p class="card-category" style="font-size: 20px; color: #666;">Okunanlar</p>
+                                    <h4 class="card-title" style="font-size: 50px; color: #333;">@ViewBag.v4</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
 </div>
+
+<style>
+    .card-stats {
+        border-radius: 10px;
+        transition: all 0.3s ease-in-out;
+        height: 280px; /* Card boyutunu büyütme */
+    }
+
+        .card-stats:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+
+    .card-body {
+        padding: 30px; /* İç boşluğu büyütme */
+    }
+
+    .numbers {
+        font-weight: bold;
+    }
+
+    .icon-big {
+        font-size: 80px; /* Icon boyutunu büyütme */
+    }
+
+    .card-category {
+        font-weight: 400;
+        color: #555;
+        font-size: 18px; /* Kategori metnini büyütme */
+    }
+
+    h4.card-title {
+        font-size: 50px; /* Başlık boyutunu büyütme */
+    }
+</style>
